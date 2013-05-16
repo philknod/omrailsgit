@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+	<h1>You're logged in!</h1>
+<% else %>
+<div class="hero-unit">	
+	<h1>welcome to ilearnedtoday</h1>
+		<p>
+			you've found the homepage of ilearnedtoday <%= link_to "ilearnedtoday", "ilearnedtoday.org" %>
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large"  %>
+		</p>
+</div>
+<% end %>
